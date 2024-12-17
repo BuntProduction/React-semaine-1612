@@ -10,6 +10,9 @@ export function Player() {
     <div>
       {result}
       <p>Voici le score : {score}</p>
+      <p>
+        Avec un opérateur ternaire : {score <= 500 ? "Perdant" : "Vainqueur"}
+      </p>
     </div>
   );
 }
