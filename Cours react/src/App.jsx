@@ -6,11 +6,23 @@ import { Player } from "./components/User/Player.jsx";
 import "./index.css";
 
 function App() {
+  const userFirstName = "Gatien";
+  const userLastName = "Bigaré";
+  const userHobbies = [
+    { id: "1", nom: "Sport" },
+    { id: "2", nom: "Art" },
+    { id: "3", nom: "Gaming" },
+  ];
+
   return (
     <>
       <div>
         <Header />
-        <User />
+        <User
+          firstName={userFirstName}
+          lastName={userLastName}
+          hobbies={userHobbies}
+        />
         <Player />
         <Footer />
       </div>

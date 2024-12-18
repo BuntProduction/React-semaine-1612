@@ -1,12 +1,12 @@
 import { Hobbies } from "./Hobbies.jsx";
 import { FullName } from "./FullName.jsx";
 
-export function User() {
+export function User({ firstName, lastName, hobbies }) {
   return (
     <>
       <div>
-        <Hobbies />
-        <FullName />
+        <FullName firstName={firstName} lastName={lastName} />
+        <Hobbies hobbies={hobbies} />
       </div>
     </>
   );

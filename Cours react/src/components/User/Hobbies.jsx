@@ -1,19 +1,9 @@
-export function Hobbies() {
-  const hobbiesFromDB = [
-    {
-      id: "test",
-      nom: "testNom",
-    },
-    {
-      id: "test2",
-      nom: "testNom2",
-    },
-  ];
+export function Hobbies({ hobbies }) {
   return (
     <ul>
-      {hobbiesFromDB.map((hobby) => {
-        return <li key={hobby.id}>{hobby.nom}</li>;
-      })}
+      {hobbies.map((hobby) => (
+        <li key={hobby.id}>{hobby.nom}</li>
+      ))}
     </ul>
   );
 }
