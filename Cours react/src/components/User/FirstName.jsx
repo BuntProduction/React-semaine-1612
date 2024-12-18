@@ -1,3 +1,3 @@
-export function FirstName() {
-  return <h1>Gatien</h1>;
+export function FirstName({ firstName }) {
+  return <p>Prénom: {firstName}</p>;
 }

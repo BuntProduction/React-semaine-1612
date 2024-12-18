@@ -1,12 +1,12 @@
 import { FirstName } from "./FirstName.jsx";
 import { LastName } from "./LastName.jsx";
 
-export function FullName() {
+export function FullName({ firstName, lastName }) {
   return (
     <>
       <div>
-        <FirstName />
-        <LastName />
+        <FirstName firstName={firstName} />
+        <LastName lastName={lastName} />
       </div>
     </>
   );
