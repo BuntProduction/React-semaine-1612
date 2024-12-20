@@ -3,6 +3,7 @@ import { Footer } from "./components/Footer.jsx";
 import { User } from "./components/User/User.jsx";
 import { Player } from "./components/User/Player.jsx";
 import { Routine } from "./components/Routine.jsx";
+import { GOT } from "./components/GOT/GOT.jsx";
 
 import "./index.css";
 
@@ -26,6 +27,7 @@ function App() {
         />
         <Player />
         <Routine />
+        <GOT />
         <Footer />
       </div>
     </>
